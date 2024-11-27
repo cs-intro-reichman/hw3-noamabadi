@@ -72,7 +72,7 @@ public class Anagram {
 		String random = "";
 		String temp = str;
 		for (int i = 0; i < str.length(); i++) {
-			int index = ((int) (Math.random() * (temp.length()-1));
+			int index = (int) (Math.random() * (temp.length()-1));
 			char ch = temp.charAt(index);
 			temp = temp.substring(0, index) + temp.substring(index+1);
 			random += ch;
