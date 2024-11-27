@@ -140,9 +140,14 @@ public class Algebra {
 			return x;
 		}
 		int sqrt = 0;
-		while (pow(sqrt, 2) - x < 0 && sqrt < x) {
+		int s = pow(sqrt, 2);
+		while (s <= x) {
+			if (s == x) {
+				return sqrt;
+			}
 			sqrt++;
+		s = pow(sqrt, 2);
 		}
-		return sqrt;
+		return sqrt-1;
 	}	  	  
 }
